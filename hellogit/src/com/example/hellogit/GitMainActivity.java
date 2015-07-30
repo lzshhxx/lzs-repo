@@ -13,19 +13,22 @@ public class GitMainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
+		
 		 Button button = new Button(this);
-	        button.setText(stringFirst("Button"));
-	        
+	        button.setText("Call Native");//stringFirst("Button"));
+	   
 	        button.setOnClickListener(new View.OnClickListener() {
 				public void onClick(View button){
 					((Button) button).setText(stringSecond("second"));
 
 					}
 	        });
+	     //   String str = stringSecond("second");
+	        setContentView(button);
 	}
 			    public native String  stringFirst(String str);
 
-			    public native String  stringSecond(String str);
+			    public native String stringSecond(String str);
 
 			    static {
 			        System.loadLibrary("hellogit");
@@ -33,4 +36,10 @@ public class GitMainActivity extends Activity {
 			
 
 }
+
+
+
+
+
+
 

@@ -1,0 +1,3 @@
+set solib-search-path ./obj/local/arm64-v8a
+source D:/FREETOOL/android-ndk-r10c/prebuilt/common/gdb/common.setup
+directory D:/FREETOOL/android-ndk-r10c/platforms/android-21/arch-arm64/usr/include D:/FREETOOL/android-ndk-r10c/sources/cxx-stl/system/include jni
